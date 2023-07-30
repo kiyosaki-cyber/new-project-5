@@ -18,7 +18,7 @@ app.use('/api/auth', authRoutes)
 
 //connecting to the mongoDB
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
+    .then(() => { 
         //port listening
   console.log('connected to db');
   app.listen(process.env.PORT, () =>{
